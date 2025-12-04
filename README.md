@@ -87,6 +87,15 @@ These insights directly support strategic decisions around station placement, fl
 
 The dashboard is built with Streamlit, integrating multiple plots and maps to present insights clearly and interactively.
 
+
+├── data/                     # Raw Citi Bike CSV files
+├── weather/                  # Extracted NOAA weather data
+├── notebooks/                # Jupyter Notebooks for cleaning & analysis
+├── dashboard/                # Streamlit dashboard scripts
+├── README.md                 # Project documentation
+└── requirements.txt          # Required Python libraries
+
+
 Dashboard Link → I will insert the dashboard link here once deployed
 
 

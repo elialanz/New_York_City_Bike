@@ -4,6 +4,7 @@ This project is part of the Data Visualization with Python module, where the goa
 
 The analysis is based on **Citi Bike’s open source trip data for 2022**, enriched with **weather data from NOAA’s API**. The final dashboard is created in **Python using Streamlit**, and it visualizes key operational patterns such as station demand, popular routes, seasonal trends, bike type usage, and geographic distribution.
 
+
 ### Project Goals
 
 - Diagnose where Citi Bike distribution problems may be occurring.
@@ -13,6 +14,7 @@ The analysis is based on **Citi Bike’s open source trip data for 2022**, enric
 - Support the business strategy team with actionable, data-driven recommendations.
 
 These goals reflect the project requirements outlined in the Project brief.
+
 
 ### Data Sources
 
@@ -40,6 +42,7 @@ Collected using:
 
 Used to examine the relationship between weather and bike usage.
 
+
 ### Python Libraries Used
 
 **Data Handling & Cleaning**
@@ -64,6 +67,7 @@ kepler.gl
 
 streamlit
 
+
 ### Summary of Analysis
 
 The descriptive analysis focuses on identifying the factors that affect demand and operational strain across New York City’s bike sharing system.
@@ -77,6 +81,7 @@ The descriptive analysis focuses on identifying the factors that affect demand a
 - Station distribution across the city
 
 These insights directly support strategic decisions around station placement, fleet balancing, and resource allocation.
+
 
 ### Final Dashboard
 

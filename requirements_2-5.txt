@@ -1,0 +1,5 @@
+pandas == 1.5.1
+matplotlib == 3.7.1
+keplergl == 0.3.2
+pip install -U ipywidgets jupyterlab_widgets
+pip install -U keplergl

@@ -135,22 +135,29 @@ elif page == 'Most Popular Stations':
     <div style="font-size:18px; line-height:1.6;">
     
     <strong>What this view shows:</strong><br>
-    This dashboard highlights the <strong>20 most popular Divvy bike stations</strong> based on total trip volume for the selected seasons.
+    This dashboard highlights the <strong>20 most popular Divvy bike stations</strong>, ranked by total trip volume for the selected seasons.
     
     <br><br>
     
     <strong>Key insight:</strong><br>
-    A small number of stations consistently record the highest usage, with the leading locations clearly outperforming the rest. After the top stations, trip volumes gradually level out, indicating a more even distribution of demand across remaining stations.
+    A small group of stations clearly dominates overall usage. In particular, <strong>W 21 St & 6 Ave</strong>, <strong>West St & Chambers St</strong>, <strong>Broadway & W 58 St</strong>, <strong>1 Ave & E 68 St</strong>, and <strong>6 Ave & W 33 St</strong> consistently record the highest number of trips, standing out from the remaining stations.
+    
+    <br><br>
+    
+    <strong>Seasonal perspective:</strong><br>
+    The season filters on the left allow this ranking to be adjusted dynamically, making it possible to analyse how station popularity changes across <em>spring, summer, fall, and winter</em>, and whether the same locations remain dominant throughout the year.
     
     <br><br>
     
     <strong>Why this matters:</strong><br>
-    High-traffic stations should be prioritised for bike availability, rebalancing, and maintenance, especially during peak seasons. Understanding these usage patterns supports more efficient operational planning and resource allocation.
+    These high-demand stations should be prioritised for bike availability, rebalancing, and maintenance, while seasonal comparisons support more informed operational and planning decisions.
     
     </div>
     """,
     unsafe_allow_html=True
     )
+
+
 
 ################################################## FOURTH PAGE INTERACTIVE MAP ##################################################
 

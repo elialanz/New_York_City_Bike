@@ -177,9 +177,38 @@ elif page == 'Interactive Map with Bike Trips':
     st.header("Aggregated Bike Trips in New York")
     st.components.v1.html(html_data, height=425)
     st.markdown("#### Using the filter on the left hand side of the map we can check whether the most popular start stations also appear in the most popular trips.")
-    st.markdown("The most popular start stations are:")
-    st.markdown("Streeter Drive/Grand Avenue, Canal Street/Adams Street as well as Clinton Street/Madison Street. While having the aggregated bike trips filter enabled, we can see that even though Clinton Street/Madison Street is a popular start stations, it doesn't account for the most commonly taken trips.")
-    st.markdown("The most common routes (>2,000) are between Theater on the Lake, Streeter Dr/Grand Avenue, Millenium Park, Columbus Dr/Randolph Street, Shedd Aquarium, Michigan Avenue/Oak Street, Canal Street/Adams Street, which are predominantly located along the water.")
+    st.markdown(
+    """
+    <div style="font-size:18px; line-height:1.6;">
+    
+    <strong>What this view shows:</strong><br>
+    This interactive map visualises <strong>aggregated bike trips across New York</strong>, highlighting the most significant travel flows between stations.
+    
+    <br><br>
+    
+    <strong>Data focus:</strong><br>
+    To reduce noise and emphasise meaningful patterns, this map only displays station pairs with <strong>at least 750 total trips</strong> between them. This filtering helps surface the most frequently used routes rather than isolated or infrequent journeys.
+    
+    <br><br>
+    
+    <strong>Key insight:</strong><br>
+    The densest and most active connections are concentrated in Manhattan, particularly along north–south corridors, indicating strong recurring travel patterns in high-demand areas. These routes likely represent commuter-heavy or consistently popular travel paths.
+    
+    <br><br>
+    
+    <strong>Interactivity:</strong><br>
+    Additional filters embedded within the map allow this view to be adjusted further, making it possible to explore different thresholds, areas, or patterns of interest and uncover alternative insights beyond the default configuration.
+    
+    <br><br>
+    
+    <strong>Why this matters:</strong><br>
+    Identifying high-volume routes supports more efficient operational decisions, such as bike redistribution, infrastructure planning, and prioritisation of maintenance along the most heavily used corridors.
+    
+    </div>
+    """,
+    unsafe_allow_html=True
+    )
+
 
 ################################################## FIFTH PAGE RECCOMENDATIONS ##################################################
 

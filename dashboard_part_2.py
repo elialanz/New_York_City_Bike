@@ -176,7 +176,7 @@ elif page == 'Interactive Map with Bike Trips':
     ## Show in webpage
     st.header("Aggregated Bike Trips in New York")
     st.components.v1.html(html_data, height=425)
-    st.markdown("#### This interactive map visualises <strong>aggregated bike trips across New York</strong>, highlighting the most significant travel routes.")
+    st.markdown("#### This interactive map visualises aggregated bike trips across New York, highlighting the most significant travel routes.")
     st.markdown(
     """
     <div style="font-size:18px; line-height:1.6;">
@@ -187,7 +187,7 @@ elif page == 'Interactive Map with Bike Trips':
     <br><br>
     
     <strong>Key insight:</strong><br>
-    The densest and most active connections are concentrated in Manhattan, particularly along north–south corridors, indicating strong recurring travel patterns in high-demand areas. These routes likely represent commuter-heavy or consistently popular travel paths.
+    The densest and most active connections are concentrated in Manhattan, particularly along north south corridors, indicating strong recurring travel patterns in high demand areas. These routes likely represent commuter heavy or consistently popular travel paths.
     
     <br><br>
     
@@ -197,7 +197,7 @@ elif page == 'Interactive Map with Bike Trips':
     <br><br>
     
     <strong>Why this matters:</strong><br>
-    Identifying high-volume routes supports more efficient operational decisions, such as bike redistribution, infrastructure planning, and prioritisation of maintenance along the most heavily used corridors.
+    Identifying high volume routes supports more efficient operational decisions, such as bike redistribution, infrastructure planning, and prioritisation of maintenance along the most heavily used corridors.
     
     </div>
     """,

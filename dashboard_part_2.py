@@ -1,4 +1,4 @@
-################################################ DIVVY BIKES DASHABOARD #########################################################
+################################################ Citi BIKES DASHABOARD #########################################################
 
 import streamlit as st
 import pandas as pd 
@@ -12,8 +12,8 @@ from numerize.numerize import numerize
 
 ########################### INITIAL SETTINGS FOR THE DASHBOARD ##################################################################
 
-st.set_page_config(page_title = 'Divvy Bikes Strategy Dashboard', layout='wide')
-st.title("Divvy Bikes Strategy Dashboard")
+st.set_page_config(page_title = 'NY CitiBikes Strategy Dashboard', layout='wide')
+st.title("NY CitiBikes Strategy Dashboard")
 
 ### Define side bar ###
 st.sidebar.title("Select Page")
@@ -47,8 +47,8 @@ hourly_trips = pd.read_csv('hourly_trips.csv')
 ################################################## INTRO PAGE ##################################################
 
 if page == "Introduction":
-    st.markdown("#### This dashboard aims at providing helpful insights on the expansion problems Divvy Bikes currently faces.")
-    st.markdown("Right now, Divvy bikes runs into a situation where customers complain about bikes not being available at certain times. This analysis will look at the potential reasons behind this. The dashboard is separated into 5 sections:")
+    st.markdown("#### This dashboard aims at providing helpful insights on the expansion problems Citi Bikes currently faces.")
+    st.markdown("Right now, Citi bikes runs into a situation where customers complain about bikes not being available at certain times. This analysis will look at the potential reasons behind this. The dashboard is separated into 5 sections:")
     st.markdown("- Weather and Bike Trips")
     st.markdown("- Bike Trips By Hours")
     st.markdown("- Most Popular Stations")
@@ -194,7 +194,7 @@ elif page == 'Most Popular Stations':
     <div style="font-size:18px; line-height:1.6;">
     
     <strong>What this view shows:</strong><br>
-    This dashboard highlights the <strong>20 most popular Divvy bike stations</strong>, ranked by total trip volume for the selected seasons.
+    This dashboard highlights the <strong>20 most popular Citi bike stations</strong>, ranked by total trip volume for the selected seasons.
     
     <br><br>
     

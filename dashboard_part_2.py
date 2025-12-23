@@ -81,15 +81,21 @@ elif page == 'Weather and Bike Trips':
     
     st.markdown(
     """
-    **Key insight:**  
-    Bike ridership closely follows temperature patterns throughout the year, with strong seasonality visible across all months.
+    <div style="font-size:18px; line-height:1.6;">
     
-    Daily bike trips increase steadily from winter into spring and peak during the summer months (June–August), when temperatures are consistently warmer. This highlights a strong positive relationship between weather conditions and cycling activity.
+    <strong>Key insight:</strong> Bike ridership closely follows temperature patterns throughout the year, with strong seasonality visible across all months.<br><br>
     
-    From September onwards, both temperatures and bike usage decline, with the sharpest drops occurring during late autumn and winter. Short-term fluctuations during warmer months may be influenced by external factors such as rainfall, extreme heat, or operational disruptions.
+    Daily bike trips increase steadily from winter into spring and peak during the summer months (June–August), when temperatures are consistently warmer. This highlights a strong positive relationship between weather conditions and cycling activity.<br><br>
+    
+    From September onwards, both temperatures and bike usage decline, with the sharpest drops occurring during late autumn and winter. Short-term fluctuations during warmer months may be influenced by external factors such as rainfall, extreme heat, or operational disruptions.<br><br>
     
     Overall, temperature emerges as a key driver of bike demand, reinforcing the importance of seasonal planning for bike availability, maintenance, and operational staffing.
-    """)
+    
+    </div>
+    """,
+    unsafe_allow_html=True
+    )
+
 
 ################################################## THIRD PAGE POPULAR STATIONS ##################################################
 

@@ -176,15 +176,10 @@ elif page == 'Interactive Map with Bike Trips':
     ## Show in webpage
     st.header("Aggregated Bike Trips in New York")
     st.components.v1.html(html_data, height=425)
-    st.markdown("#### Using the filter on the left hand side of the map we can check whether the most popular start stations also appear in the most popular trips.")
+    st.markdown("#### This interactive map visualises <strong>aggregated bike trips across New York</strong>, highlighting the most significant travel routes.")
     st.markdown(
     """
     <div style="font-size:18px; line-height:1.6;">
-    
-    <strong>What this view shows:</strong><br>
-    This interactive map visualises <strong>aggregated bike trips across New York</strong>, highlighting the most significant travel flows between stations.
-    
-    <br><br>
     
     <strong>Data focus:</strong><br>
     To reduce noise and emphasise meaningful patterns, this map only displays station pairs with <strong>at least 750 total trips</strong> between them. This filtering helps surface the most frequently used routes rather than isolated or infrequent journeys.

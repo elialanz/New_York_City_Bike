@@ -37,9 +37,9 @@ temp_trips['trip_date'] = pd.to_datetime(temp_trips['trip_date'])
 
 if page == "Introduction":
     st.markdown("#### This dashboard aims at providing helpful insights on the expansion problems Divvy Bikes currently faces.")
-    st.markdown("Right now, Divvy bikes runs into a situation where customers complain about bikes not being available at certain times. This analysis will look at the potential reasons behind this. The dashboard is separated into 4 sections:")
+    st.markdown("This chart shows the relationship between daily Divvy bike rides and average daily temperature throughout 2022. A clear seasonal pattern is visible across the year.Bike usage increases steadily from winter into spring, reaching its highest levels during the summer months (June–August), when temperatures are consistently warmer. This suggests a strong positive relationship between temperature and bike ridership, with favorable weather encouraging more cycling activity. From September onwards, both temperature and bike trips begin to decline, with the sharpest drops occurring during late autumn and winter. Occasional dips in ridership during warmer months may be explained by short-term factors such as heavy rain, extreme heat, or operational disruptions. Overall, the chart highlights temperature as a key driver of bike demand, reinforcing the importance of seasonal planning for bike availability, maintenance, and staffing. The dashboard is separated into 4 sections:")
     st.markdown("- Most Popular Stations")
-    st.markdown("- Weather and Bike Tripse")
+    st.markdown("- Weather and Bike Trips")
     st.markdown("- Interactive Map with Bike Trips")
     st.markdown("- Recommendations")
     st.markdown("The dropdown menu on the left 'Aspect Selector' will take you to the different aspects of the analysis our team looked at.")

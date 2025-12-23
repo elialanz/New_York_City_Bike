@@ -123,19 +123,21 @@ elif page == "Bike Trips By Hours":
 
     st.markdown("---")
     
-    st.markdown("## 📊 Daily Bike Trips vs Temperature (2022)")
+    st.markdown("## ⏱️ Bike Trips by Hour of Day")
     
     st.markdown(
     """
-    <div style="font-size:18px; line-height:1.6;">
+    <div style="font-size:18px; line-height:1.7;">
     
-    <strong>Key insight:</strong> Bike ridership closely follows temperature patterns throughout the year, with strong seasonality visible across all months.<br>
+    <strong>Key insight:</strong> Bike usage follows a clear daily rhythm, reflecting commuter behaviour and leisure patterns throughout the day.<br><br>
     
-    Daily bike trips increase steadily from winter into spring and peak during the summer months (June–August), when temperatures are consistently warmer. This highlights a strong positive relationship between weather conditions and cycling activity.<br>
+    Trips are lowest during the early morning hours when demand is minimal. Usage begins to rise sharply from around <strong>06:00</strong>, coinciding with morning commuting activity.<br><br>
     
-    From September onwards, both temperatures and bike usage decline, with the sharpest drops occurring during late autumn and winter. Short-term fluctuations during warmer months may be influenced by external factors such as rainfall, extreme heat, or operational disruptions.<br>
+    A sustained increase is visible through the afternoon, with peak demand occurring in the <strong>late afternoon and early evening (16:00–18:00)</strong>. This aligns with return home commutes, recreational riding, and higher urban activity levels.<br><br>
     
-    Overall, temperature emerges as a key driver of bike demand, reinforcing the importance of seasonal planning for bike availability, maintenance, and operational staffing.
+    After <strong>19:00</strong>, trip volumes steadily decline as the city transitions into evening and night time hours.<br><br>
+    
+    <strong>Operational implication:</strong> These patterns suggest that bike availability, rebalancing efforts, and staffing should be prioritised during morning and evening peak hours to reduce shortages and improve service reliability.
     
     </div>
     """,

@@ -56,7 +56,7 @@ if page == "Introduction":
     st.markdown("- Recommendations")
     st.markdown("The dropdown menu on the left 'Select Page' will take you to the different aspects of the analysis our team looked at.")
 
-    myImage = Image.open("divvy_bikes.jpg")
+    myImage = Image.open("citi_bikes.jpg")
     st.image(myImage)
 
 ################################################## SECOND PAGE WEATHER/TRIPS ##################################################
@@ -269,7 +269,7 @@ elif page == 'Interactive Map with Bike Trips':
 else:
     
     st.header("Conclusions and recommendations")
-    bikes = Image.open("recs_page.png")
+    bikes = Image.open("citibike_small.jpg")
     st.image(bikes)
     st.markdown("---")
         

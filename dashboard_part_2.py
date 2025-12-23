@@ -271,6 +271,26 @@ else:
     st.header("Conclusions and recommendations")
     bikes = Image.open("recs_page.png")
     st.image(bikes)
-    st.markdown("### Our analysis has shown that Divvy Bikes should focus on the following objectives moving forward:")
-    st.markdown("- Add more stations to the locations around the water line, such as heater on the Lake, Streeter Dr/Grand Avenue, Millenium Park, Columbus Dr/Randolph Street, Shedd Aquarium, Michigan Avenue/Oak Street, Canal Street/Adams Street")
-    st.markdown("- Ensure that bikes are fully stocked in all these stations during the warmer months in order to meet the higher demand, but provide a lower supply in winter and late autumn to reduce logistics costs")
+    st.markdown("---")
+        
+    st.markdown(
+    """
+    <div style="font-size:18px; line-height:1.7;">
+    
+    <strong>Key insight:</strong> This analysis examined Citi Bikes usage patterns across time, location, and seasonality to identify practical actions that can help reduce bike shortages and support future expansion decisions.<br><br>
+    <strong>Seasonal scaling of bike availability (November–April)</strong><br>
+    Citi Bikes should scale bike availability down by approximately 30–40% between November and April.<br>
+    The analysis shows a strong seasonal relationship between temperature and bike usage. Trip volumes peak during warmer months (June–August) and decline steadily through autumn, reaching their lowest levels in winter. During colder months, demand is consistently lower across most stations and time periods.<br><br>
+
+    <strong>Determining how many new stations to add along waterfront areas</strong><br>
+    Future station expansion along the water should be guided by high volume route analysis, rather than evenly spaced station placement.<br>
+    The interactive map highlights dense, recurring bike trip corridors concentrated along Manhattan’s waterfront and north south travel routes. These corridors indicate sustained demand rather than isolated trips.<br><br>
+
+    <strong>Ensuring bikes are available at the most popular stations</strong><br>
+    Citi Bikes should prioritise dynamic rebalancing and staffing during peak demand hours, particularly morning (06:00–09:00) and late afternoon to early evening (16:00–18:00).<br>
+    Bike usage follows a clear daily rhythm, with the highest demand occurring during commuter hours. A small number of stations consistently dominate total trip volume across all seasons, making them especially vulnerable to shortages.<br><br>
+    
+    </div>
+    """,
+    unsafe_allow_html=True
+    )

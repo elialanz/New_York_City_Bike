@@ -21,6 +21,17 @@ page = st.sidebar.selectbox('Select an aspect of the analysis',
   ["Introduction", "Weather and Bike Trips", "Bike Trips By Hours",
    "Most Popular Stations", "Interactive Map with Bike Trips", "Recommendations"])
 
+st.markdown(
+    """
+    <style>
+        section[data-testid="stSidebar"] {
+            background-color: #e8f5e9;
+        }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 ########################### CREATING A DROPDOWN MENU ############################################################################
 
 df = pd.read_csv('reduced_data_to_plot_small.csv')

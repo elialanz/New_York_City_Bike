@@ -129,7 +129,28 @@ elif page == 'Most Popular Stations':
     width = 900, height = 600
     )
     st.plotly_chart(fig, use_container_width=True)
-    st.markdown("From the bar chart it is clear that there are some start stations that are more popular than others - in the top 3 we can see Streeter Drive/Grand Avenue, Canal Street/Adams Streat as well as Clinton Street/Madison Street. There is a big jump between the highest and lowest bars of the plot, indicating some clear preferences for the leading stations. This is a finding that we could cross reference with the interactive map that you can access through the side bar select box.")
+
+    st.markdown(
+    """
+    <div style="font-size:18px; line-height:1.6;">
+    
+    <strong>What this view shows:</strong><br>
+    This dashboard highlights the <strong>20 most popular Divvy bike stations</strong> based on total trip volume for the selected seasons.
+    
+    <br><br>
+    
+    <strong>Key insight:</strong><br>
+    A small number of stations consistently record the highest usage, with the leading locations clearly outperforming the rest. After the top stations, trip volumes gradually level out, indicating a more even distribution of demand across remaining stations.
+    
+    <br><br>
+    
+    <strong>Why this matters:</strong><br>
+    High-traffic stations should be prioritised for bike availability, rebalancing, and maintenance, especially during peak seasons. Understanding these usage patterns supports more efficient operational planning and resource allocation.
+    
+    </div>
+    """,
+    unsafe_allow_html=True
+    )
 
 ################################################## FOURTH PAGE INTERACTIVE MAP ##################################################
 

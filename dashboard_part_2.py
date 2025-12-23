@@ -18,9 +18,8 @@ st.title("Divvy Bikes Strategy Dashboard")
 ### Define side bar ###
 st.sidebar.title("Select Page")
 page = st.sidebar.selectbox('Select an aspect of the analysis',
-  ["Introduction","Weather and Bike Trips",
-   "Most Popular Stations",
-    "Interactive Map with Bike Trips", "Recommendations"])
+  ["Introduction", "Weather and Bike Trips", "Bike Trips By Hours",
+   "Most Popular Stations", "Interactive Map with Bike Trips", "Recommendations"])
 
 ########################### CREATING A DROPDOWN MENU ############################################################################
 
@@ -29,6 +28,7 @@ df['date'] = pd.to_datetime(df['date'])
 top20_csv = pd.read_csv('top20.csv')
 temp_trips = pd.read_csv('temp_trips.csv')
 temp_trips['trip_date'] = pd.to_datetime(temp_trips['trip_date'])
+hourly_trips = pd.read_csv('hourly_trips.csv')
 
 ######################################### DEFINE THE PAGES #####################################################################
 
@@ -37,12 +37,13 @@ temp_trips['trip_date'] = pd.to_datetime(temp_trips['trip_date'])
 
 if page == "Introduction":
     st.markdown("#### This dashboard aims at providing helpful insights on the expansion problems Divvy Bikes currently faces.")
-    st.markdown("Right now, Divvy bikes runs into a situation where customers complain about bikes not being available at certain times. This analysis will look at the potential reasons behind this. The dashboard is separated into 4 sections:")
-    st.markdown("- Most Popular Stations")
+    st.markdown("Right now, Divvy bikes runs into a situation where customers complain about bikes not being available at certain times. This analysis will look at the potential reasons behind this. The dashboard is separated into 5 sections:")
     st.markdown("- Weather and Bike Trips")
+    st.markdown("- Bike Trips By Hours")
+    st.markdown("- Most Popular Stations")
     st.markdown("- Interactive Map with Bike Trips")
     st.markdown("- Recommendations")
-    st.markdown("The dropdown menu on the left 'Aspect Selector' will take you to the different aspects of the analysis our team looked at.")
+    st.markdown("The dropdown menu on the left 'Select Page' will take you to the different aspects of the analysis our team looked at.")
 
     myImage = Image.open("divvy_bikes.jpg")
     st.image(myImage)
@@ -96,7 +97,52 @@ elif page == 'Weather and Bike Trips':
     unsafe_allow_html=True
     )
 
-################################################## THIRD PAGE POPULAR STATIONS ##################################################
+################################################## THIRD PAGE BIKE TRIPS PER HOUR ##################################################
+
+elif page == "Bike Trips By Hours":
+
+    fig = go.Figure()
+
+    fig.add_trace(
+        go.Scatter(
+            x=hourly_trips["hour"],
+            y=hourly_trips["trip_count"],
+            mode="lines+markers",
+            name="Trips"
+        )
+    )
+
+    fig.update_layout(
+        title="Bike Trips by Hour of Day",
+        xaxis_title="Hour (0–23)",
+        yaxis_title="Number of Trips",
+        height=400
+    )
+
+    st.plotly_chart(fig, use_container_width=True)
+
+    st.markdown("---")
+    
+    st.markdown("## 📊 Daily Bike Trips vs Temperature (2022)")
+    
+    st.markdown(
+    """
+    <div style="font-size:18px; line-height:1.6;">
+    
+    <strong>Key insight:</strong> Bike ridership closely follows temperature patterns throughout the year, with strong seasonality visible across all months.<br>
+    
+    Daily bike trips increase steadily from winter into spring and peak during the summer months (June–August), when temperatures are consistently warmer. This highlights a strong positive relationship between weather conditions and cycling activity.<br>
+    
+    From September onwards, both temperatures and bike usage decline, with the sharpest drops occurring during late autumn and winter. Short-term fluctuations during warmer months may be influenced by external factors such as rainfall, extreme heat, or operational disruptions.<br>
+    
+    Overall, temperature emerges as a key driver of bike demand, reinforcing the importance of seasonal planning for bike availability, maintenance, and operational staffing.
+    
+    </div>
+    """,
+    unsafe_allow_html=True
+    )
+
+################################################## 4TH PAGE POPULAR STATIONS ##################################################
 
 # Create the season variable
 
@@ -159,7 +205,7 @@ elif page == 'Most Popular Stations':
 
 
 
-################################################## FOURTH PAGE INTERACTIVE MAP ##################################################
+################################################## 5TH PAGE INTERACTIVE MAP ##################################################
 
 elif page == 'Interactive Map with Bike Trips':
 
@@ -205,7 +251,7 @@ elif page == 'Interactive Map with Bike Trips':
     )
 
 
-################################################## FIFTH PAGE RECCOMENDATIONS ##################################################
+################################################## 6TH PAGE RECCOMENDATIONS ##################################################
 
 else:
     

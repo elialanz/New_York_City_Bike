@@ -75,7 +75,21 @@ elif page == 'Weather and Bike Trips':
     )
 
     st.plotly_chart(fig_2, use_container_width=True)
-    st.markdown("This chart shows the relationship between daily Divvy bike rides and average daily temperature throughout 2022. A clear seasonal pattern is visible across the year. Bike usage increases steadily from winter into spring, reaching its highest levels during the summer months (June–August), when temperatures are consistently warmer. This suggests a strong positive relationship between temperature and bike ridership, with favorable weather encouraging more cycling activity. From September onwards, both temperature and bike trips begin to decline, with the sharpest drops occurring during late autumn and winter. Occasional dips in ridership during warmer months may be explained by short-term factors such as heavy rain, extreme heat, or operational disruptions. Overall, the chart highlights temperature as a key driver of bike demand, reinforcing the importance of seasonal planning for bike availability, maintenance, and staffing.")
+    st.markdown("---")
+    
+    st.markdown("## 📊 Daily Bike Trips vs Temperature (2022)")
+    
+    st.markdown(
+    """
+    **Key insight:**  
+    Bike ridership closely follows temperature patterns throughout the year, with strong seasonality visible across all months.
+    
+    Daily bike trips increase steadily from winter into spring and peak during the summer months (June–August), when temperatures are consistently warmer. This highlights a strong positive relationship between weather conditions and cycling activity.
+    
+    From September onwards, both temperatures and bike usage decline, with the sharpest drops occurring during late autumn and winter. Short-term fluctuations during warmer months may be influenced by external factors such as rainfall, extreme heat, or operational disruptions.
+    
+    Overall, temperature emerges as a key driver of bike demand, reinforcing the importance of seasonal planning for bike availability, maintenance, and operational staffing.
+    """)
 
 ################################################## THIRD PAGE POPULAR STATIONS ##################################################
 

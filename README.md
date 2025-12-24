@@ -1,3 +1,6 @@
+**Live Dashboard Link →** [New York CitiBike](https://citibike.elialanz.com)
+
+
 ## NYC CityBike Dashboard - Data Analysis (2022)
 
 This project is part of the Data Visualization with Python module, where the goal is to build a strategic, data driven dashboard to help a bike sharing company understand rider behavior, identify logistical issues, and discover opportunities for system expansion across New York City.
@@ -86,8 +89,3 @@ These insights directly support strategic decisions around station placement, fl
 ### Final Dashboard
 
 The dashboard is built with Streamlit, integrating multiple plots and maps to present insights clearly and interactively.
-
-Dashboard Link → I will insert the dashboard link here once deployed
-
-
-

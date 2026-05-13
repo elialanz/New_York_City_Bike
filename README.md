@@ -187,4 +187,7 @@ I'm Elia Lanzuise, a Melbourne-based data analyst focused on transforming raw da
 
 My work focuses on business performance analysis, data visualization, customer behavior, operational insights, and turning complex datasets into practical decisions.
 
-Explore my [data analyst portfolio](https://www.elialanz.com/) or learn more about my [business dashboard services](https://www.elialanz.com/dashboard-service/).
+I'm specialised in [data analytics for transport and logistics](https://www.elialanz.com/dashboard-service/), retail, transport, booking based services, and e-commerce.
+
+[See how I work with clients →](https://www.elialanz.com/dashboard-service/) · [Other data services I offer →](https://www.elialanz.com/hire-me/) · [elialanz.com](https://www.elialanz.com)
+

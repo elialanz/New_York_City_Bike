@@ -12,8 +12,14 @@ from numerize.numerize import numerize
 
 ########################### INITIAL SETTINGS FOR THE DASHBOARD ##################################################################
 
-st.set_page_config(page_title = 'NY CitiBikes Strategy Dashboard', layout='wide')
-st.title("NY CitiBikes Strategy Dashboard")
+st.set_page_config(
+    page_title="NYC Citi Bike Operational Dashboard | Elia Lanzuise",
+    page_icon="🚲",
+    layout="wide",
+    menu_items={
+        "About": "Built by Elia Lanzuise. Custom operational dashboards for businesses with hidden demand patterns. https://www.elialanz.com/dashboard-service/"
+    }
+)
 
 ### Define side bar ###
 st.sidebar.title("Select Page")

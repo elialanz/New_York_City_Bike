@@ -38,6 +38,19 @@ st.markdown(
     unsafe_allow_html=True
 )
 
+st.sidebar.markdown("---")
+st.sidebar.markdown(
+    """
+    ### About this dashboard
+    
+    Built by **Elia Lanzuise** — freelance data analyst.
+    
+    📊 [Full case study](https://www.elialanz.com/citibike-project)  
+    💼 [Hire me for similar work](https://www.elialanz.com/dashboard-service/)  
+    🌐 [elialanz.com](https://www.elialanz.com)
+    """
+)
+
 ########################### CREATING A DROPDOWN MENU ############################################################################
 
 df = pd.read_csv('reduced_data_to_plot_small.csv')
@@ -61,6 +74,27 @@ if page == "Introduction":
     st.markdown("- Interactive Map with Bike Trips")
     st.markdown("- Recommendations")
     st.markdown("The dropdown menu on the left 'Select Page' will take you to the different aspects of the analysis our team looked at.")
+    st.markdown(
+    """
+    ### Why this dashboard exists
+    
+    A bike-share operator running ~30 million annual trips can't make 
+    fleet decisions from a monthly report. This dashboard demonstrates 
+    what [operational visibility](https://www.elialanz.com/what-operational-visibility-means/) 
+    looks like for a transport business — surfacing demand patterns by 
+    weather, hour, station, and route in a way that supports actual 
+    rebalancing and expansion decisions.
+    
+    This is a public portfolio case study, not an internal Citi Bike 
+    engagement. The full written walkthrough — including the data 
+    cleaning of 69,835 missing-station rows, the NOAA weather merge, 
+    and the operational recommendations — is 
+    [on the project page](https://www.elialanz.com/citibike-project).
+    
+    If you're an operator looking at this and thinking *"I need something 
+    like this for my business,"* the [dashboard service is here](https://www.elialanz.com/dashboard-service/).
+    """
+)
 
     myImage = Image.open("citi_bikes.jpg")
     st.image(myImage)

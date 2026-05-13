@@ -43,9 +43,9 @@ st.sidebar.markdown(
     """
     ### About this dashboard
     
-    Built by **Elia Lanzuise** — freelance data analyst.
+    Built by **Elia Lanzuise** | Freelance Data Analyst.
     
-    📊 [Full case study](https://www.elialanz.com/citibike-project)  
+    📊 [Full case study](https://www.elialanz.com/case-study-citibike)  
     💼 [Hire me for similar work](https://www.elialanz.com/dashboard-service/)  
     🌐 [elialanz.com](https://www.elialanz.com)
     """
@@ -78,18 +78,18 @@ if page == "Introduction":
     """
     ### Why this dashboard exists
     
-    A bike-share operator running ~30 million annual trips can't make 
+    A bike share operator running ~30 million annual trips can't make 
     fleet decisions from a monthly report. This dashboard demonstrates 
     what [operational visibility](https://www.elialanz.com/what-operational-visibility-means/) 
-    looks like for a transport business — surfacing demand patterns by 
+    looks like for a transport business, surfacing demand patterns by 
     weather, hour, station, and route in a way that supports actual 
     rebalancing and expansion decisions.
     
     This is a public portfolio case study, not an internal Citi Bike 
-    engagement. The full written walkthrough — including the data 
+    engagement. The full written walkthrough, including the data 
     cleaning of 69,835 missing-station rows, the NOAA weather merge, 
-    and the operational recommendations — is 
-    [on the project page](https://www.elialanz.com/citibike-project).
+    and the operational recommendations, is 
+    [on the project page](https://www.elialanz.com/case-study-citibike).
     
     If you're an operator looking at this and thinking *"I need something 
     like this for my business,"* the [dashboard service is here](https://www.elialanz.com/dashboard-service/).
